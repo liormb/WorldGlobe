@@ -1,0 +1,49 @@
+
+.globe-container {
+  position: relative;
+  width: 100%; 
+  height: 100%;
+  margin: 0px auto;
+  background: #fff;
+  color: #333;
+}
+
+/* World Globe using CANVAS */
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.blur {
+  -webkit-filter: blur(6px);
+  filter: blur(6px);
+}
+
+/* World Globe using SVG */
+svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  fill: #fff;
+}
+.sphere {
+  fill: none;
+  stroke: #777;
+  stroke-width: .5px;
+  stroke-opacity: .5;
+}
+.graticule {
+  fill: none;
+  stroke: #777;
+  stroke-width: .5px;
+  stroke-opacity: .5;
+}
+.country {
+  fill: #dadac4;
+  stroke: #666;
+  stroke-width: 0.5px;
+  transition: all 0.5s;
+}
+.country:hover {
+  fill: red;
+}
